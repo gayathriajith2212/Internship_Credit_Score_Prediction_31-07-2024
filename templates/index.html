@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Score Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1>Credit Score Prediction</h1>
+    
+    
+    <form action="/predict" method="post">
+        <label for="Annual Income">Annual Income:</label>
+        <input type="number" step="0.01" id="Annual Income" name="Annual Income"><br><br>
+
+        <label for="Number of Bank Accounts">Number of Bank Accounts:</label>
+        <input type="number" id="Number of Bank Accounts" name="Number of Bank Accounts"><br><br>
+
+        <label for="Number of Credit Card">Number of Credit Cards:</label>
+        <input type="number" id="Number of Credit Card" name="Number of Credit Card"><br><br>
+
+        <label for="Interest Rate">Interest Rate:</label>
+        <input type="number" step="0.01" id="Interest Rate" name="Interest Rate"><br><br>
+
+        <label for="Number of Loan">Number of Loans:</label>
+        <input type="number" id="Number of Loan" name="Number of Loan"><br><br>
+
+        <label for="Delay from due date">Delay from Due Date:</label>
+        <input type="number" id="Delay from due date" name="Delay from due date"><br><br>
+
+        <label for="Number of Delayed Payment">Number of Delayed Payments:</label>
+        <input type="number" id="Number of Delayed Payment" name="Number of Delayed Payment"><br><br>
+
+        <label for="Changed Credit Limit">Changed Credit Limit:</label>
+        <input type="number" step="0.01" id="Changed Credit Limit" name="Changed Credit Limit"><br><br>
+
+        <label for="Number of Credit Inquires">Number of Credit Inquiries:</label>
+        <input type="number" id="Number of Credit Inquires" name="Number of Credit Inquires"><br><br>
+
+        <label for="Outstanding Debt">Outstanding Debt:</label>
+        <input type="number" step="0.01" id="Outstanding Debt" name="Outstanding Debt"><br><br>
+
+        <label for="Total EMI per Month">Total EMI per Month:</label>
+        <input type="number" step="0.01" id="Total EMI per Month" name="Total EMI per Month"><br><br>
+
+        <label for="Credit Mix">Credit Mix:</label>
+        <input type="number" id="Credit Mix" name="Credit Mix"><br><br>
+        
+        <label for="Total_Num_Accounts">Total Number of Accounts:</label>
+        <input type="number" id="Total_Num_Accounts" name="Total_Num_Accounts"><br><br>
+
+        <label for="Debt_Per_Account">Debt per Account:</label>
+        <input type="number" step="0.01" id="Debt_Per_Account" name="Debt_Per_Account"><br><br>
+
+        <label for="Debt_to_Income_Ratio">Debt to Income Ratio:</label>
+        <input type="number" step="0.000001" id="Debt_to_Income_Ratio" name="Debt_to_Income_Ratio"><br><br>
+
+        <label for="Delayed_Payments_Per_Account">Delayed Payments per Account:</label>
+        <input type="number" step="0.000001" id="Delayed_Payments_Per_Account" name="Delayed_Payments_Per_Account"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

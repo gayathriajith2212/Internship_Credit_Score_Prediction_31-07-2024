@@ -1,0 +1,25 @@
+.Poor {
+    height: 50%; /* This might not be necessary for positioning */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    animation: showup 20s infinite;
+}
+
+.Standard, .Good {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    animation: showup 20s infinite;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
